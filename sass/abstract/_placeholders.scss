@@ -1,0 +1,27 @@
+// placeholder
+%btn {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+}
+
+%navDisplaying{
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+%centeringContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%centeringWzSpEvenly{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+

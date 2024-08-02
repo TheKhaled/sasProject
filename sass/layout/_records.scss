@@ -1,0 +1,39 @@
+.all-records{
+    margin: 50px 0px;
+}
+
+.bg-img{
+    background-image: url("./assets/images/pattern-1.jpg");
+    @include zIndexContainer(-2, 30%);
+    
+}
+.bg-color{
+    background-color: chocolate;
+    @include zIndexContainer(-1, 70%);
+}
+.main-records{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.record{
+    width:25%;
+    @extend %centeringContent;
+    flex-direction: column;
+
+    h2{
+        @include font(white, 50px, "Poppins", 400);
+    }
+    hr{
+        margin: 10px 0px;
+        width: 15%;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    p{
+        margin-top: 10px;
+        @include font(white, 16px, "Poppins", 500);
+    }
+}

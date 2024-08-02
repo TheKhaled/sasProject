@@ -1,0 +1,50 @@
+.main-services{
+    @extend %centeringContent;
+    flex-direction: column;
+    p{
+        margin-top: -10px;
+        margin-bottom: 20px;
+
+    }
+}
+
+.all-services{
+    width:80%;
+    @extend %centeringContent;
+}
+.service{
+    width: 25%;
+    height: 350px;
+    margin: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    h4{
+        opacity: 70%;
+        text-transform: uppercase;
+        @include font(black, 15px, "Poppins", 600);
+    }
+    &:hover{
+        .srv-icon{
+            @include eleHover("", rgb(90, 86, 86))
+        }
+    }
+}
+.srv-icon{
+    height: 140px;
+    width: 140px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: $main-color;
+    @extend %centeringContent;
+}
+.srv-details{
+    text-align: center;
+    /* opacity: 70%; */
+    width:95%;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+

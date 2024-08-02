@@ -1,0 +1,35 @@
+.test-cover{
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    background-image: url("./assets/images/parallax-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.first-test{
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    @extend %centeringWzSpEvenly;
+    flex-direction: column;
+    p{
+        width:60%;
+        text-align: center;
+        @include font(white, 18px, "Poppins", 400);
+    }
+    hr{
+        width: 3%;
+        border: 1px solid whitesmoke;
+    }
+    h3{
+        text-transform: uppercase;
+        @include font($main-color, 15px, "Poppins", 600);
+    }
+}
+.person-img{
+   height: 150px;
+   width: 150px;
+   overflow: hidden;
+   border: 0px;
+   border-radius: 50%; 
+}

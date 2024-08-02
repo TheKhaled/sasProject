@@ -1,0 +1,45 @@
+        .order {
+            margin: auto;
+            margin-top: 50px;
+            width: 80%;
+            height: 500px;
+            @extend %centeringContent;
+            flex-direction: column;
+        }
+
+        .title-details {
+            @extend %centeringContent;
+            flex-direction: column;
+        }
+
+        .order-form {
+            height: 90%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 23%);
+            grid-auto-rows: minmax(50px, auto);
+            gap: 10px 20px;
+            justify-content: center;
+            align-content: center;
+            grid-template-areas: "child1 child1 child2 child2"
+                "child3 child3 child4 child4"
+                "child5 child5 child6 child6"
+                "child7 child7 child7 child7"
+                "child8 child8 child8 child8";
+
+
+        }
+
+        .inpField {
+            padding: 0px 15px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+
+.child1 {grid-area: child1;}
+.child2 {grid-area: child2;}
+.child3 {grid-area: child3;}
+.child4 {grid-area: child4;}
+.child5 {grid-area: child5;}
+.child6 {grid-area: child6;}
+.child7 {grid-area: child7;}
+.child8 {grid-area: child8;}

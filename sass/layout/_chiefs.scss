@@ -1,0 +1,85 @@
+.chiefs{
+    @extend %centeringContent;
+    flex-direction: column;
+}
+.all-chiefs{
+    width:80%;
+    display: flex;
+}
+.single-chief{
+    width: 23%;
+    height: 400px;
+    margin: 10px;
+    padding: 0px 10px;
+    @extend %centeringWzSpEvenly;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    h4{
+        opacity: 70%;
+        text-transform: uppercase;
+        @include font(black, 16px, "Poppins", 600);
+    }
+}
+
+.chief-photo{
+    height: 200px;
+    width: 200px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: aqua;
+    overflow: hidden;
+    img{
+        height: 200px;
+        width:200px;
+    }  
+}
+
+.social-icons{
+    @include zIndexContainer(1,100%);
+    width:200px;
+    border:0px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    @extend %centeringWzSpEvenly;
+    transition: 0.9s all ease-in-out;  
+}
+
+.single-icon{
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    @extend %centeringContent;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    img{
+        width: 16px;
+        height: 16px;
+    }
+    &:hover{
+        background-color: rgba(153, 224, 19);
+        transition: 0.3s all ease-in-out;
+    }
+}
+ 
+.chief-details{
+    text-align: center;
+    width:95%;
+    line-height: 1.7;
+    font-size: 15px;
+    // @include font()
+}
+
+.disp-social-icons,
+ .disp-social-icons2,
+  .disp-social-icons3,
+   .disp-social-icons4{
+    display: none;
+}
+
+body:has(#c1:hover) .disp-social-icons, 
+ body:has(#c2:hover) .disp-social-icons2, 
+  body:has(#c3:hover) .disp-social-icons3,
+   body:has(#c4:hover) .disp-social-icons4  {
+    display: block;  
+}

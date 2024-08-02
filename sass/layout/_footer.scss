@@ -1,0 +1,28 @@
+.footer-cover{
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    background-image: url("./assets/images/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.footer-content{
+    height: inherit;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    @extend %centeringWzSpEvenly;
+    flex-direction: column;
+    p{
+        color: rgba(255,255,255,0.7);
+        font-family: 'Poppins';
+    }
+}
+.footer-social{
+    display: flex;
+    .single-icon{
+        margin: 0px 10px;
+    }
+}
+.footer-logo-img img{
+    height: 50px;
+} 

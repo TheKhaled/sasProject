@@ -1,0 +1,36 @@
+.hero{
+    @extend %centeringContent;
+    height: 500px;
+    overflow: hidden;
+    background-image: url("../../assets/images/slide-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: aqua;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+    
+}
+.typing{
+    text-align: center;
+
+    width: 60%;
+    h1{
+        text-transform: uppercase;
+        @include font(white, 35px, "Poppins", 600);
+    }
+    h2{
+        text-transform: uppercase;
+        @include font($main-color, 25px, "Poppins", 400);
+        
+    }
+    h3{
+        @include font(white, 16px, "Poppins", 500);
+        opacity: 80%;
+        line-height: 1.3;
+    }
+}
+
+
